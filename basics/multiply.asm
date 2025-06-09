@@ -1,5 +1,5 @@
 section .data
-    format db "5 x %2d = %2d", 0ah, 0
+    format db "6 x %2d = %2d", 0ah, 0
     
 section .text
     default rel
@@ -14,8 +14,8 @@ main:
     mov     ecx, 1            ; Counter (1 to 10)
     
 print_loop:
-    ; Calculate 5 * counter
-    mov     eax, 5
+    ; Calculate 6 * counter
+    mov     eax, 6
     imul    eax, eax, ecx
     
     ; Print result
