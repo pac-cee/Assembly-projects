@@ -1,0 +1,26 @@
+d:\VScode\Assembly\basics\multiply.temp.asm(1) : Error A2209: Syntax error: section
+d:\VScode\Assembly\basics\multiply.temp.asm(2) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(4) : Error A2209: Syntax error: section
+d:\VScode\Assembly\basics\multiply.temp.asm(5) : Error A2209: Syntax error: default
+d:\VScode\Assembly\basics\multiply.temp.asm(6) : Error A2209: Syntax error: global
+d:\VScode\Assembly\basics\multiply.temp.asm(7) : Error A2084: Colon is expected
+d:\VScode\Assembly\basics\multiply.temp.asm(9) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(10) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(11) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(12) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(14) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(16) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(18) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(19) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(22) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(23) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(24) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(25) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(26) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(28) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(29) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(30) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(32) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(33) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(34) : Error A2082: Must be in segment block
+d:\VScode\Assembly\basics\multiply.temp.asm(34) : Error A2099: END directive required at end of file

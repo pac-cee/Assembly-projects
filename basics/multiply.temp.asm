@@ -11,22 +11,22 @@ main:
     mov     rbp, rsp
     sub     rsp, 32            ; Shadow space
     
-    mov     ecx, 1            ; Counter (1 to 10)
+    mov     r12d, 1           ; Counter (1 to 10)
     
 print_loop:
     ; Calculate 5 * counter
     mov     eax, 5
-    imul    eax, eax, ecx
+    imul    eax, r12d
     
     ; Print result
-    lea     rdx, [format]
-    mov     esi, ecx          ; Current number
-    mov     edx, eax          ; Result of multiplication
-    xor     eax, eax
+    lea     rcx, [format]
+    mov     edx, r12d         ; Current number
+    mov     r8d, eax          ; Result of multiplication
+    xor     rax, rax
     call    printf
     
-    inc     rcx
-    cmp     rcx, 11
+    inc     r12d
+    cmp     r12d, 11
     jl      print_loop
     
     xor     eax, eax
