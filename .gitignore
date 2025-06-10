@@ -4,7 +4,7 @@
 # But not these files
 !*.asm
 !*.s
-!.gitignore
+
 
 # Ignore backup files even if they have .asm extension
 *~
