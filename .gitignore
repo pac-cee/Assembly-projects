@@ -1,0 +1,13 @@
+# Ignore everything
+*
+
+# But not these files
+!*.asm
+!*.s
+!.gitignore
+
+# Ignore backup files even if they have .asm extension
+*~
+
+# Don't ignore directories
+!*/
