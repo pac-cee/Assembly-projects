@@ -1,32 +1,50 @@
 section .data
-    format db "6 x %2d = %2d", 0ah, 0
+    prompt  db "Enter a number for multiplication table: ", 0
+    format  db "%d x %2d = %2d", 0ah, 0
+    scanfmt db "%d", 0
     
+section .bss
+    number resd 1     ; Reserve space for user's number
+
 section .text
     default rel
     global main
     extern printf
+    extern scanf
 
 main:
     push    rbp
     mov     rbp, rsp
     sub     rsp, 32            ; Shadow space
-    
-    mov     ecx, 1            ; Counter (1 to 10)
+
+    ; Print prompt
+    lea     rcx, [prompt]
+    xor     rax, rax
+    call    printf
+
+    ; Read user input
+    lea     rcx, [scanfmt]     ; First argument for scanf
+    lea     rdx, [number]      ; Second argument - address to store number
+    xor     rax, rax
+    call    scanf
+
+    mov     r12d, 1           ; Counter (1 to 10)
     
 print_loop:
-    ; Calculate 6 * counter
-    mov     eax, 6
-    imul    eax, eax, ecx
+    ; Calculate number * counter
+    mov     eax, [number]      ; Get user's number
+    imul    eax, r12d         ; Multiply by counter
     
     ; Print result
-    lea     rdx, [format]
-    mov     esi, ecx          ; Current number
-    mov     edx, eax          ; Result of multiplication
-    xor     eax, eax
+    lea     rcx, [format]      ; First argument for printf
+    mov     edx, [number]      ; Second argument (user's number)
+    mov     r8d, r12d         ; Third argument (counter)
+    mov     r9d, eax          ; Fourth argument (result)
+    xor     rax, rax
     call    printf
     
-    inc     rcx
-    cmp     rcx, 11
+    inc     r12d
+    cmp     r12d, 11
     jl      print_loop
     
     xor     eax, eax
